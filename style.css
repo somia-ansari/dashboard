@@ -268,6 +268,11 @@ nav .profile-details i{
 .box{
 width: 100%;
 }
+.section-details iframe {
+    height: 50em;
+    width: 50em;
+}
+
 .ops-box-container{
   list-style: none;
   color: white;
@@ -358,6 +363,9 @@ width: 100%;
   margin-right: 10px;
   background: #333;
 }
+.side-details li:hover{
+  cursor: pointer;
+}
 .section-boxes .side-details li a{
   display: flex;
   align-items: center;
@@ -443,4 +451,15 @@ height: 600px;
   .sidebar.active ~ .home-section nav .profile-details{
     display: none;
   }
+}
+@media only screen and (min-width: 1200px) {
+.section-details iframe{
+  width: 60em;
+  height: 60em;
+  }
+  .section-details img{
+    width: 60em;
+     height: 60em;
+  }
+    
 }
