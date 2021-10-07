@@ -526,6 +526,7 @@ nav .profile-details i {
     width: 80em;
     height: 80em;
   }
+}
 @media only screen and (min-width: 1200px) {
   .section-details iframe {
     width: 120em;
