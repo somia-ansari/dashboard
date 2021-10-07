@@ -521,23 +521,17 @@ nav .profile-details i {
     display: none;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .section-details iframe {
-    width: 80em;
-    height: 80em;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .section-details iframe {
-    width: 120em;
-    height: 100em;
-  }
-  .section-details img {
     width: 60em;
     height: 60em;
   }
 }
-
+@media only screen and (min-width: 1800px) {
+  .section-details iframe {
+    width: 120em;
+    height: 100em;
+  }
 /* Nav bar */
 
 nav {
