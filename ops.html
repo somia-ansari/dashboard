@@ -2,101 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPS Board</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    
-    <script type="text/javascript">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPS Board</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<script type="text/javascript">
 
-    if(localStorage.getItem("Admin") == null) {
-     window.location.replace("login.html");
-    }
-  </script>
+
+if(localStorage.getItem("Admin") == null) {
+    window.location.replace("login.html");
+}
+</script>
 
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <a href="index.html" target="index">
-                <li>Main Dashboard</li>
-            </a>
-            <a href="permit.html" target="permit">
-                <li>Permit Board</li>
-            </a>
-            <a href="pid.html" target="pid">
-                <li>P & ID Board</li>
-            </a>
-        </ul>
-    </nav>
-    <div class="home-content" style="display: flex;flex-direction: column;
-    width: 100%;">
+<nav>
+    <ul>
+        <a href="index.html" target="index">
+            <li>Main Dashboard</li>
+        </a>
+        <a href="permit.html" target="permit">
+            <li>Permit Board</li>
+        </a>
+        <a href="pid.html" target="pid">
+            <li>P & ID Board</li>
+        </a>
+        <a href="toxic.html" target="pid">
+            <li style="font-size:17px;">Toxic and Radiation Contours</li>
+        </a>
+    </ul>
+</nav>
+<div class="home-content" style="display: flex;flex-direction: column;width: 100%;">
 
-        <div class="section-boxes" id="ops">
+    <div class="section-boxes" id="ops">
 
-            <div class="section-details" style="width:100%;">
-                PDF Opens here
-                <iframe src=".pdf" id="pdfOne"">
-                    </iframe>
-            </div>
-
-            <div class="recent-section box" style="flex:2;">
-                <div class="title">OPS Board</div>
-                <ul class="ops-box-container">
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                Execution Schedule
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                Notice Board
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                Training Calendar
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                JSA/MOCs
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                MSDs
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
-                            <a>
-                                Emergency Contacts
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-           
-
+        <div class="section-details" style="width:100%;">
+            Display here
+            <div id="excel_data" class="mt-5"></div>
+            <iframe src=".pdf" id="pdfOne"">
+                </iframe>
         </div>
+
+        <div class="recent-section box" style="flex:2;">
+            <div class="title">OPS Board</div>
+            <ul class="ops-box-container">
+                <li>
+                    <div class="title ops-box">
+                        <a>
+                            Execution Schedule 
+                            <p style="font-size: 10px;">
+                                For Excel
+                            </p>
+                        <input type="file" id="excel_file">
+                        <p style="font-size: 10px;">
+                        For PDF
+                        </p>
+                        <input type="file" id="pdf_file">
+
+                        </a>
+                    </div>
+                </li>
+                    
+                <li>
+                    <div class="title ops-box">
+                        <a>
+                            DSCD<p style="font-size: 10px;">
+                                For Excel
+                            </p>
+                        <input type="file" id="excel_file">
+                        <p style="font-size: 10px;">
+                        For PDF
+                        </p>
+                        <input type="file" id="pdf_file">
+</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" style="font-size: 20px;">
+                        <a>
+                            Operations ROTA/ Shift Schedule
+                            <p style="font-size: 10px;">
+                                For Excel
+                            </p>
+                        <input type="file" id="excel_file">
+                        <p style="font-size: 10px;">
+                        For PDF
+                        </p>
+                        <input type="file" id="pdf_file">
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box">
+                        <a>
+                            LOTO sheet
+                            <p style="font-size: 10px;">
+                                For Excel
+                            </p>
+                        <input type="file" id="excel_file">
+                        <p style="font-size: 10px;">
+                        For PDF
+                        </p>
+                        <input type="file" id="pdf_file">
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
+                        <a>
+                            Notice Board
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
+                        <a>
+                            Training Calendar
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
+                        <a>
+                            JSA/MOCs
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
+                        <a>
+                            MSDS
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title ops-box" onclick="document.getElementById('pdfOne').src='pdfs/sample.pdf'">
+                        <a>
+                            Emergency Contacts
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
         
 
     </div>
+    
+
+</div>
 </body>
 
 </html>

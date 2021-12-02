@@ -331,7 +331,7 @@ nav .profile-details i {
   margin: 20px;
   background: #73ba3e;
   width: 250px;
-  height: 150px;
+  min-height: 150px;
 }
 
 /* left box */
