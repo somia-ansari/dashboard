@@ -8,6 +8,13 @@
     <title>P & ID Board</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
+    <script type="text/javascript">
+
+    if(localStorage.getItem("Admin") == null) {
+     window.location.replace("login.html");
+    }
+  </script>
 
 </head>
 
@@ -30,7 +37,7 @@
         <div class="section-boxes" id="p&id">
             <div class="recent-section box">
                 <div class="title">P&ID Board</div>
-                <div class="section-details">
+                <div class="section-details" style="height: 100vh;">
 
                     <iframe src=".pdf" id="pdf1">
                     </iframe>

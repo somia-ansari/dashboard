@@ -40,7 +40,7 @@ html {
 
 .sidebar .logo-details .logo_name {
   color: #fff;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 500;
 }
 
@@ -350,7 +350,7 @@ nav .profile-details i {
 
 .section-details {
   align-items: center;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
 
 }
@@ -401,7 +401,7 @@ nav .profile-details i {
 /* Right box */
 
 .home-content .section-boxes .side-details {
-  width: 35%;
+  width: 15%;
   background: #fff;
   padding: 20px 30px;
   margin: 20px 20px 0 0;
@@ -410,10 +410,11 @@ nav .profile-details i {
 }
 
 .section-boxes .side-details li {
-  display: flex;
+  /*display: flex;*/
+  list-style: none;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .section-boxes .side-details li a img {
@@ -442,11 +443,11 @@ nav .profile-details i {
   width: 120px;
 }
 
-.color-box li{
+/*.color-box li{
   border: 2px solid lightgray;
   padding: 2px;
-  width: max-content;
-}
+  /*width: max-content;*/
+}*/
 
 /* PDFs options */
 
@@ -521,16 +522,54 @@ nav .profile-details i {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+
+@media only screen and (min-width: 1200px) {
   .section-details iframe {
-    width: 60em;
-    height: 60em;
+    width: 100%;
+    height: 100vh;
+  }
+  .section-details img {
+    width: 100%;
+    height: auto;
+  }
+  .section-boxes .side-details li a {
+    font-size: 16px;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .section-details iframe {
-    width: 120em;
-    height: 100em;
+  
+@media only screen and (min-width: 2200px) {
+  .section-boxes .side-details li a {
+    font-size: 20px;
+  }
+  nav ul a {
+    font-size: 1.8em !important;
+  }
+}
+
+@media only screen and (min-width: 3600px) {
+  .section-boxes .side-details li a {
+    font-size: 26px;
+  }
+  nav ul a {
+    font-size: 2.5em !important;
+  }
+}
+  
+@media only screen and (min-width: 5000px) {
+  .section-boxes .side-details li a {
+    font-size: 36px;
+  }
+  nav ul a {
+    font-size: 3.3em !important;
+  }
+}
+  
+@media only screen and (min-width: 7500px) {
+  .section-boxes .side-details li a {
+    font-size: 50px;
+  }
+  nav ul a {
+    font-size: 4.5em !important;
   }
 }
 /* Nav bar */
