@@ -9,7 +9,9 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background: #006f3c;
+  background-image: url("img/pic.jpg");
+  background-repeat: round;
+  background-color: #006f3c;
 
 }
 
