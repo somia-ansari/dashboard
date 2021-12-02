@@ -356,7 +356,7 @@ nav .profile-details i {
 }
 
 .section-boxes .box .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -415,6 +415,7 @@ nav .profile-details i {
   align-items: center;
   justify-content: space-between;
   margin: 0px 0;
+  border-bottom: 1px solid #006f3c;
 }
 
 .section-boxes .side-details li a img {
